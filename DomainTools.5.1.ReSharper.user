@@ -8,9 +8,15 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="8056" fromTop="6" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Log.cs" caret="1235" fromTop="15" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Program.cs" caret="162" fromTop="7" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="2042" fromTop="26" />
     </RecentFiles>
-    <RecentEdits />
+    <RecentEdits>
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="2446" fromTop="17" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="2318" fromTop="13" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="2689" fromTop="24" />
+    </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
     <NAntPath value="" />
@@ -23,4 +29,10 @@
     </NUnitInstallDir>
     <UseAddins>Never</UseAddins>
   </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="while" priority="0" />
+      <Item value="null" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
 </Configuration>

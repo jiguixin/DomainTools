@@ -74,13 +74,23 @@ namespace CheckDomainName
                 string url;
                 string webUrl;
                 string validateCode;
+
                 GetUrl(out lastStr, out url, out validateCode);
 
                 webUrl = "www." + validateCode + lastStr;
 
-                var b = lstResult.Find(f => f == webUrl);
-                if (b != null)
-                    return;
+                //var b = lstResult.Find(f => f == webUrl);
+                //if (b != null)
+                //    return;
+
+                while(lstResult.Find(f => f == webUrl) != null)
+                {
+                    GetUrl(out lastStr, out url, out validateCode);
+
+                    webUrl = "www." + validateCode + lastStr;
+                     
+                }
+
 
                 HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
                 httpRequest.Timeout = 2000;
