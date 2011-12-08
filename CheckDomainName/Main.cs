@@ -161,17 +161,17 @@ namespace CheckDomainName
         private static string CrateNumber(int size)
         {
             string validateCode;
-            char[] chars = "023456789".ToCharArray();
+            char[] chars = "0123456789".ToCharArray();
             Random random = new Random();
             validateCode = string.Empty;
             for (int i = 0; i < size; i++)
             {
                 char rc = chars[random.Next(0, chars.Length)];
-                if (validateCode.IndexOf(rc) > -1)
-                {
-                    i--;
-                    continue;
-                }
+                //if (validateCode.IndexOf(rc) > -1)
+                //{
+                //    i--;
+                //    continue;
+                //}
                 validateCode += rc;
             }
             return validateCode;
@@ -184,17 +184,17 @@ namespace CheckDomainName
         private static string CrateLetter(int size)
         {
             string validateCode;
-            char[] chars = "abcdefghighlmnopqrstuvwxyz".ToCharArray();
+            char[] chars = "abcdefghijklmnopqrstuvwxyz".ToCharArray();
             Random random = new Random();
             validateCode = string.Empty;
             for (int i = 0; i < size; i++)
             {
                 char rc = chars[random.Next(0, chars.Length)];
-                if (validateCode.IndexOf(rc) > -1)
-                {
-                    i--;
-                    continue;
-                }
+                //if (validateCode.IndexOf(rc) > -1)
+                //{
+                //    i--;
+                //    continue;
+                //}
                 validateCode += rc;
             }
             return validateCode;
@@ -207,17 +207,17 @@ namespace CheckDomainName
         private static string CreateLetterAndNumber(int size)
         {
             string validateCode;
-            char[] chars = "abcdefghighlmnopqrstuvwxyz023456789".ToCharArray();
+            char[] chars = "abcdefghijklmnopqrstuvwxyz0123456789".ToCharArray();
             Random random = new Random();
             validateCode = string.Empty;
             for (int i = 0; i < size; i++)
             {
                 char rc = chars[random.Next(0, chars.Length)];
-                if (validateCode.IndexOf(rc) > -1)
-                {
-                    i--;
-                    continue;
-                }
+                //if (validateCode.IndexOf(rc) > -1)
+                //{
+                //    i--;
+                //    continue;
+                //}
                 validateCode += rc;
             }
             return validateCode;
