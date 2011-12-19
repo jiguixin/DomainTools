@@ -10,19 +10,26 @@
     <RecentFiles>
       <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Log.cs" caret="1235" fromTop="15" />
       <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Program.cs" caret="162" fromTop="7" />
-      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="6040" fromTop="4" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="5605" fromTop="27" />
     </RecentFiles>
     <RecentEdits>
-      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="2446" fromTop="17" />
-      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="2318" fromTop="13" />
-      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="2689" fromTop="24" />
-      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="5554" fromTop="4" />
-      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="5806" fromTop="16" />
-      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="5943" fromTop="20" />
-      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="6716" fromTop="25" />
-      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="6320" fromTop="15" />
-      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="7123" fromTop="23" />
-      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="7512" fromTop="27" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="2543" fromTop="17" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="2415" fromTop="13" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="6045" fromTop="4" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="6297" fromTop="16" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="6434" fromTop="20" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="7207" fromTop="25" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="6811" fromTop="15" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="7614" fromTop="23" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="8003" fromTop="27" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="3142" fromTop="9" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="3399" fromTop="17" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="2808" fromTop="15" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="8034" fromTop="32" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="308" fromTop="7" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="8771" fromTop="28" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="5664" fromTop="31" />
+      <File id="2BE89AAE-2C2A-466C-AB84-9AF9A4C0E4DA/f:Main.cs" caret="5555" fromTop="26" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -40,6 +47,39 @@
     <ItemStatistics item="Default">
       <Item value="while" priority="0" />
       <Item value="null" priority="0" />
+      <Item value="httpResponse" priority="0" />
+      <Item value="if" priority="5" />
+      <Item value="return" priority="1" />
+      <Item value="HttpStatusCode`0" priority="0" />
+      <Item value="result" priority="0" />
+      <Item value="private" priority="1" />
+      <Item value="string" priority="2" />
+      <Item value="txtBefor" priority="1" />
+      <Item value="this" priority="1" />
+      <Item value="txtLast" priority="0" />
+      <Item value="txtLastStr" priority="0" />
+      <Item value="validateCode" priority="5" />
+      <Item value="BeforName" priority="1" />
+      <Item value="LastName" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.HttpWebResponse">
+      <Item value="StatusCode" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.HttpStatusCode">
+      <Item value="OK" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Contains`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="IsNullOrEmpty`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CheckDomainName.Main">
+      <Item value="BeforName" priority="0" />
+      <Item value="LastName" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

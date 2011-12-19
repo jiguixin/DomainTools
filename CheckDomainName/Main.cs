@@ -9,6 +9,9 @@ namespace CheckDomainName
 {
     public partial class Main : Form
     {
+        private string BeforName { get; set; }
+        private string LastName { get; set; }
+
         public List<string> lstResult;
         public Main()
         {
@@ -89,15 +92,19 @@ namespace CheckDomainName
 
                     webUrl = "www." + validateCode + lastStr;
                      
-                }
-
+                } 
 
                 HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
                 httpRequest.Timeout = 2000;
                 httpRequest.Method = "GET";
                 HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+                if (httpResponse.StatusCode != HttpStatusCode.OK)
+                    return;
                 StreamReader sr = new StreamReader(httpResponse.GetResponseStream(), System.Text.Encoding.GetEncoding("gb2312"));
                 string result = sr.ReadToEnd();
+
+                if (result.Contains("(查询超时)"))
+                    return;
 
                 if (!result.Contains("(已被注册)"))
                 {
@@ -150,6 +157,12 @@ namespace CheckDomainName
                     validateCode = CrateNumber(size);
                     break;
             }
+            if (!string.IsNullOrEmpty(BeforName))
+                validateCode = BeforName + validateCode;
+
+            if (!string.IsNullOrEmpty(LastName))
+                validateCode = validateCode + LastName;
+
             //validateCode = "269";
             url = string.Format(url, validateCode, lastStr);
         }
@@ -239,6 +252,11 @@ namespace CheckDomainName
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+            if (!string.IsNullOrEmpty(txtBefor.Text))
+                this.BeforName = txtBefor.Text;
+            if (!string.IsNullOrEmpty(txtLast.Text))
+                this.LastName = txtLast.Text;
+
             timer1.Enabled = true;
             btnStart.Enabled = false;
             btnEnd.Enabled = true;
