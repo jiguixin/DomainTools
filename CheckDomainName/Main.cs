@@ -13,6 +13,7 @@ namespace CheckDomainName
         private string LastName { get; set; }
 
         public List<string> lstResult;
+        public List<string> lstSuccess;
         public Main()
         {
             InitializeComponent();
@@ -37,7 +38,10 @@ namespace CheckDomainName
             string currentPath = System.AppDomain.CurrentDomain.BaseDirectory;
             string logfilename = currentPath + "不可用" + ".log";
 
-             lstResult = ReadFileLine(logfilename); 
+            string logSuccessFileName = currentPath + "可注册.log";
+
+             lstResult = ReadFileLine(logfilename);
+             lstSuccess = ReadFileLine(logSuccessFileName);
         }
         /// <summary>
         /// 读取文件的内容到List中
@@ -108,7 +112,16 @@ namespace CheckDomainName
 
                 if (!result.Contains("(已被注册)"))
                 {
-                    Log.WriteLog("可以注册的",webUrl);
+                    string sRes = lstSuccess.Find(f => f.Contains(webUrl));
+
+                    if (!string.IsNullOrEmpty(sRes))
+                    {
+                        return;
+                    } 
+
+                    lstSuccess.Add(webUrl); 
+                    Log.WriteLog("可注册",webUrl);
+
                     if (this.textBox1.Text != "")
                     {
                         this.textBox1.Text += "\r\n";
@@ -235,6 +248,7 @@ namespace CheckDomainName
             }
             return validateCode;
         }
+
 
         private void timer1_Tick(object sender, EventArgs e)
         {

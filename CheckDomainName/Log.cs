@@ -28,7 +28,7 @@ namespace CheckDomainName
         public static void WriteLog(string fileName, string logInfo)
         {
             string currentPath = System.AppDomain.CurrentDomain.BaseDirectory;
-            string logfilename = currentPath + fileName + DateTime.Today.ToString("yyyyMMdd") + ".log";
+            string logfilename = currentPath + fileName  + ".log";
             StreamWriter sw = new StreamWriter(logfilename, true);
             sw.WriteLine(DateTime.Now.ToString() + "==" + logInfo);
             sw.Close();
